@@ -2,8 +2,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from youtube_scripts import GetYoutubeVideo, DownloadVideo
 
-cid = "46a1a9c9997543f1824fcfbcb34e25fd"
-secret = "d6baef160ed04896b19bc9772750aa1c"
+cid = "{YOUR CLIENT ID}"
+secret = "{YOUR SECRET CODE}"
 client_credentials_manager=SpotifyClientCredentials(client_id=cid, client_secret=secret)
 def GetPlaylistContents(userid ,playlist):
 	sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
